@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Quilted Bomber Jacket",
+      "description": "A durable and weatherproof parka with an insulated interior and a faux fur-trimmed hood for extra warmth.",
+      "price": 10.99,
+      "image": "../media/jacket-1.png"
+    },
+    {
+      "id": 2,
+      "name": "Waterproof Windbreaker Jacket",
+      "description": "Lightweight and breathable windbreaker with water-resistant fabric, perfect for outdoor adventures and rainy days.",
+      "price": 40.99,
+      "image": "../media/jacket-4.png"
+    },
+    {
+      "id": 3,
+      "name": "Leather Biker Jacket",
+      "description": "A sleek and stylish leather biker jacket with a zip-up front and a rugged design, ideal for a bold and edgy look.",
+      "price": 60.99,
+      "image": "../media/jacket-6.png"
+    }
+  ]
