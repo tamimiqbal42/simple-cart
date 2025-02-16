@@ -26,20 +26,28 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Render Products
     function renderProducts(products) {
-      productList.innerHTML = products
-        .map(
-          (product) => `
-        <div class="product" data-id="${product.id}">
-          <img src="${product.image}" alt="${product.name}">
-          <h3>${product.name}</h3>
-          <p>${product.description}</p>
-          <p>$${product.price.toFixed(2)}</p>
-          <button onclick="addToCart(${product.id})">Add to Cart</button>
-        </div>
-      `
-        )
-        .join("");
-    }
+        productList.innerHTML = `
+          <div class="loading">
+            <img src="loading.gif" alt="Loading...">
+          </div>
+        `;
+        setTimeout(() => {
+          productList.innerHTML = products
+            .map(
+              (product) => `
+            <div class="product" data-id="${product.id}">
+              <img src="${product.image}" alt="${product.name}">
+              <h3>${product.name}</h3>
+              <p>${product.description}</p>
+              <p>$${product.price.toFixed(2)}</p>
+              <button onclick="addToCart(${product.id})">Add to Cart</button>
+            </div>
+          `
+            )
+            .join("");
+        }, 1000);
+      }
+      
   
     // Add to Cart
     window.addToCart = function(productId) {
